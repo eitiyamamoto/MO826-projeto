@@ -16,9 +16,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-O SARS-COV-2 teve seu início em dezembro de 2019 em Wuhan, na China. Em 20 de Janeiro de 2020, a ONU classificou o surto como emergência de Saúde Pública de âmbito internacional e, em 11 de março de 2020, como pandemia. Um vírus de alta transmissibilidade atingindo as pessoas de todos os recantos do mundo, com mais de 2 milhões de mortos e esses números subindo diariamente.
-       	Tem sido motivo de preocupações por parte dos Cientistas, governantes do mundo, organizações e instituições de Saúde e da população mundial. As consequências que se arrastam na sociedade são visíveis como: mortes, problemas emocionais, desemprego, crise econômica, Hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes. Indícios de um mundo que envelhece piorando.
-    	   Além de medidas de higienização das mãos, uso de máscaras, e outras. Os governos têm adotado o isolamento social como uma das medidas para conter o avanço da doença e por estarmos vivenciando esse cenário no nosso cotidiano, resolvemos aferir o impacto que as medidas de  isolamento tem na incidência da Covid-19, como tema de nosso projeto de pesquisa.
+O SARS-COV-2 teve seu início em dezembro de 2019 em Wuhan, na China. Em 20 de Janeiro de 2020, a ONU classificou o surto como emergência de Saúde Pública de âmbito internacional e, em 11 de março de 2020, como pandemia. Um vírus de alta transmissibilidade atingindo as pessoas de todos os recantos do mundo, com mais de 2 milhões de mortos e esses números subindo diariamente.\
+       	Tem sido motivo de preocupações por parte dos Cientistas, governantes do mundo, organizações e instituições de Saúde e da população mundial. As consequências que se arrastam na sociedade são visíveis como: mortes, problemas emocionais, desemprego, crise econômica, Hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes. Indícios de um mundo que envelhece piorando.\
+    	   Além de medidas de higienização das mãos, uso de máscaras, e outras. Os governos têm adotado o isolamento social como uma das medidas para conter o avanço da doença e por estarmos vivenciando esse cenário no nosso cotidiano, resolvemos aferir o impacto que as medidas de  isolamento tem na incidência da Covid-19, como tema de nosso projeto de pesquisa.\
 > 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
@@ -26,10 +26,9 @@ O SARS-COV-2 teve seu início em dezembro de 2019 em Wuhan, na China. Em 20 de J
 O isolamento social reduz a incidência?
 
 # Bases de Dados
-Elencar bases de dados candidatas a serem utilizadas no projeto.
-1 - Dados abertos fornecidos pelo Governo do Estado de São Paulo: Casos e óbitos por município e data, pacientes internados por SRAG, leitos e internação por diretoria regional de saúde e índice de isolamento social. <link: https://www.saopaulo.sp.gov.br/planosp/simi/dados-abertos/>
-2 - Our World in Data: Quantidade de pessoas que receberam pelo menos a primeira dose da vacina contra a COVID-19. <link: https://ourworldindata.org/coronavirus/country/brazil>
-3 - Google COVID-19 Community mobility report: Relatório dividido por países, estados e municípios com dados de variação de mobilidade durante a pandemia. A variação na mobilidade é dividida por tipo de localidade como residência, local de trabalho, estação de transporte público e farmácias. <link: https://www.google.com/covid19/mobility/>
+1 - Dados abertos fornecidos pelo Governo do Estado de São Paulo: Casos e óbitos por município e data, pacientes internados por SRAG, leitos e internação por diretoria regional de saúde e índice de isolamento social. <link: https://www.saopaulo.sp.gov.br/planosp/simi/dados-abertos/>\
+2 - Our World in Data: Quantidade de pessoas que receberam pelo menos a primeira dose da vacina contra a COVID-19. <link: https://ourworldindata.org/coronavirus/country/brazil>\
+3 - Google COVID-19 Community mobility report: Relatório dividido por países, estados e municípios com dados de variação de mobilidade durante a pandemia. A variação na mobilidade é dividida por tipo de localidade como residência, local de trabalho, estação de transporte público e farmácias. <link: https://www.google.com/covid19/mobility/>\
  
 Observação: Os dados de vacinômetro por município não serão utilizados, pois os dados não são distribuídos pela data.
 
@@ -37,9 +36,9 @@ Observação: Os dados de vacinômetro por município não serão utilizados, po
 Análise de séries temporais, análise dos componentes, redes neurais com LSTM.
 
 # Ferramentas
-Python – Linguagem de programação para processamento dos dados, análise dos componentes e projeções.
-Jupyter Notebook - Aplicação Web para um ambiente de programação interativo e de fácil visualização.
-Google Colab - Ambiente de programação hospedado na nuvem para processamento e compartilhamento.
-Power Bi- cruzamento de bases de dados para obtenção de informações (demográficas, projeções, ...).
+Python – Linguagem de programação para processamento dos dados, análise dos componentes e projeções.\
+Jupyter Notebook - Aplicação Web para um ambiente de programação interativo e de fácil visualização.\
+Google Colab - Ambiente de programação hospedado na nuvem para processamento e compartilhamento.\
+Power Bi- cruzamento de bases de dados para obtenção de informações (demográficas, projeções, ...).\
 
 # Cronograma
