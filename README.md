@@ -1,74 +1,45 @@
-# Projeto - Primeira Entrega
-
-O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
-
-Na primeira entrega do projeto, seu grupo deverá:
-
- - Criar um repositório GitHub ou GitLab **público** que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
- - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
- - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
- - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo.
-
-Após a primeira entrega, será agendada (em horário de aula) uma data de arguição da proposta de projeto. É obrigatória a participação de todos os membros durante o momento da arguição da proposta. Durante a arguição, os professores fornecerão feedbacks sobre a proposta e seu grupo poderá tirar dǘvidas sobre o encaminhamento do projeto. 
-
-# Estrutura do Repositório
-
-A fim de uniformizar os repositórios de projetos da disciplina, os diretórios de seu repositório deverão ser nomeados e utilizados segundo a estrutura sugerida em [Home - Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/), na seção "Directory structure".
-
-Note que nem todos os diretórios ou arquivos serão necessários para todos os projetos. Foque em seguir o padrão para os diretórios que forem necessários. Não crie diretórios que não serão utilizados.
-
-Seu repositório deverá obrigatoriamente conter o arquivo README.md, arquivo de documentação Markdown, que deverá conter a descrição do projeto conforme orientações a seguir.
-
-
-# Editando Arquivo README.md
-
-Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
-[Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
-
-Vide detalhes sobre o Markdown em: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-E mais especificamente sobre tabelas em: [Organizing information with tables](https://help.github.com/en/articles/organizing-information-with-tables)
-
-Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-Segue abaixo o modelo de como devem ser documentadas as entregas.
-> Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-# Modelo para Apresentação do Projeto
-
-# Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Projeto O IMPACTO DO ISOLAMENTO SOCIAL NA INCIDÊNCIA DO SARS COVID 2 NO ESTADO DE SÃO PAULO
+# Project `THE IMPACT OF SOCIAL ISOLATION ON THE INCIDENCE OF SARS COVID 2 IN THE STATE OF SÃO PAULO`
 
 # Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2021, na Unicamp.
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os grupos devem ter no máximo 5 integrantes e devem contar com pelo menos um aluno da área da saúde e um aluno de área afim à Computação (Ex.: Computação, Elétrica...)
+
 > |Nome  | RA | Especialização|
 > |--|--|--|
-> | Nome1  | 123456  | Saúde|
-> | Nome2  | 123456  | Computação|
-> | Nome3  | 123456  | XXX|
-> | Nome4  | 123456  | XXX|
-> | Nome5  | 123456  | XXX|
+> | ANDERSON MAURICIO DE OLIVEIRA  | 264408  | Saúde|
+> | DIEGO HENRIQUE DA SILVA  | 231381  | Saúde|
+> | VICTOR EITI YAMAMOTO  | 157465  | Computação|
+> | LUCIANO LOPES SALGADO  | 224035  | Computação|
+> | EMÍDIO ANTÔNIO DE ARAÚJO NETO  | 265885  | Saúde|
 
 
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+O SARS-COV-2 teve seu início em dezembro de 2019 em Wuhan, na China. Em 20 de Janeiro de 2020, a ONU classificou o surto como emergência de Saúde Pública de âmbito internacional e, em 11 de março de 2020, como pandemia. Um vírus de alta transmissibilidade atingindo as pessoas de todos os recantos do mundo, com mais de 2 milhões de mortos e esses números subindo diariamente.
+       	Tem sido motivo de preocupações por parte dos Cientistas, governantes do mundo, organizações e instituições de Saúde e da população mundial. As consequências que se arrastam na sociedade são visíveis como: mortes, problemas emocionais, desemprego, crise econômica, Hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes. Indícios de um mundo que envelhece piorando.
+    	   Além de medidas de higienização das mãos, uso de máscaras, e outras. Os governos têm adotado o isolamento social como uma das medidas para conter o avanço da doença e por estarmos vivenciando esse cenário no nosso cotidiano, resolvemos aferir o impacto que as medidas de  isolamento tem na incidência da Covid-19, como tema de nosso projeto de pesquisa.
 > 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+O isolamento social reduz a incidência?
 
 # Bases de Dados
-> Elencar bases de dados candidatas a serem utilizadas no projeto.
+Elencar bases de dados candidatas a serem utilizadas no projeto.
+1 - Dados abertos fornecidos pelo Governo do Estado de São Paulo: Casos e óbitos por município e data, pacientes internados por SRAG, leitos e internação por diretoria regional de saúde e índice de isolamento social. <link: https://www.saopaulo.sp.gov.br/planosp/simi/dados-abertos/>
+2 - Our World in Data: Quantidade de pessoas que receberam pelo menos a primeira dose da vacina contra a COVID-19. <link: https://ourworldindata.org/coronavirus/country/brazil>
+3 - Google COVID-19 Community mobility report: Relatório dividido por países, estados e municípios com dados de variação de mobilidade durante a pandemia. A variação na mobilidade é dividida por tipo de localidade como residência, local de trabalho, estação de transporte público e farmácias. <link: https://www.google.com/covid19/mobility/>
+ 
+Observação: Os dados de vacinômetro por município não serão utilizados, pois os dados não são distribuídos pela data.
 
 # Metodologia
-> Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
+Análise de séries temporais, análise dos componentes, redes neurais com LSTM.
 
 # Ferramentas
-> Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
+Python – Linguagem de programação para processamento dos dados, análise dos componentes e projeções.
+Jupyter Notebook - Aplicação Web para um ambiente de programação interativo e de fácil visualização.
+Google Colab - Ambiente de programação hospedado na nuvem para processamento e compartilhamento.
+Power Bi- cruzamento de bases de dados para obtenção de informações (demográficas, projeções, ...).
 
 # Cronograma
-> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
