@@ -50,3 +50,4 @@ Power Bi- cruzamento de bases de dados para obtenção de informações (demogr�
 
 
 # Cronograma
+![alt text](https://github.com/eitiyamamoto/MO826-projeto/blob/master/image/cronograma.png)
