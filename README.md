@@ -41,6 +41,7 @@ Base de Dados | Endereço na Web | Resumo descritivo
 Índice de isolamento social | https://www.saopaulo.sp.gov.br/planosp/simi/dados-abertos/ | O índice de isolamento um índice atualizado diariamente com dados disponibilizados pelas prestadoras de serviços de telecomunicação e gerida pela Associação Brasileira de Recursos em Telecomunicações.
 
 Os dados são Município1, Código Município IBGE, População estimada (2020), UF1, Data, Média de índice de Isolamento. O índice de isolamento é baseada na localização obtida pelas antenas de celulares que são marcadas como uma referência para o lugar onde o celular permaneceu entre as 22h00 e 2h00. Durante o dia, caso o celular tenha se afastado deste ponto de referência é definida como fora do isolamento. A distância percorrida para ser considerado como fora do isolamento é variável. Na cidade de São Paulo chega a aproximadamente 200 metros.
+
 A maior dificuldade para utilizar estes dados foram que a data é constituída pelo dia da semana e a data sem o ano. Portanto foi necessário separar as duas informações e para converter para o formato datahora do python foi necessário adicionar o ano. Ao analisar os dados, percebemos que as informações são adicionadas do mais recente ao mais antigo e o dia da semana confirma qual o ano, portanto conseguimos adicionar o ano para as datas. Algumas datas estavam faltando, portanto completamos utilizando a média entre o dia anterior e o dia seguinte.
 
 Base de Dados | Endereço na Web | Resumo descritivo
