@@ -1,5 +1,5 @@
-# Projeto O IMPACTO DO ISOLAMENTO SOCIAL NA INCIDÊNCIA DO SARS COVID 2 NO ESTADO DE SÃO PAULO
-# Project `THE IMPACT OF SOCIAL ISOLATION ON THE INCIDENCE OF SARS COVID 2 IN THE STATE OF SÃO PAULO`
+# Projeto O PERFIL DA MOBILIDADE URBANA NA CIDADE DE CAMPINAS/SÃO PAULO DURANTE A PANDEMIA DO SARS-CoV-2
+# Project `THE PROFILE OF URBAN MOBILITY IN THE CITY OF CAMPINAS / SÃO PAULO DURING THE SARS- COV-2 PANDEMIC`
 
 # Apresentação
 
@@ -11,21 +11,31 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | ANDERSON MAURICIO DE OLIVEIRA  | 264408  | Saúde|
 > | DIEGO HENRIQUE DA SILVA  | 231381  | Saúde|
 > | VICTOR EITI YAMAMOTO  | 157465  | Computação|
-> | LUCIANO LOPES SALGADO  | 224035  | Computação|
-> | EMÍDIO ANTÔNIO DE ARAÚJO NETO  | 265885  | Saúde|
+> | ANA PAULA DE OLIVEIRA DIAS  | 231273  | Saúde |
+> | VANESSA GOMES LIMA  | 223810  | Saúde |
 
 
 # Descrição Resumida do Projeto
-O SARS-COV-2 teve seu início em dezembro de 2019 em Wuhan, na China. Em 20 de Janeiro de 2020, a ONU classificou o surto como emergência de Saúde Pública de âmbito internacional e, em 11 de março de 2020, como pandemia. Um vírus de alta transmissibilidade atingindo as pessoas de todos os recantos do mundo, com mais de 2 milhões de mortos e esses números subindo diariamente.
+A COVID-19, tem apresentado uma  taxa de letalidade de 2,8%, ceifando até o momento 428.034 vidas no Brasil³. Diante da disseminação rápida da doença, foi necessário adotar medidas de prevenção e mitigação, para isso, a OMS e o Ministério da Saúde no Brasil redigiram medidas de distanciamento social a serem seguidas como estratégia de controle da mobilidade da população, redução das atividades comerciais não essenciais, restrição de circulação de pessoas em eventos e transportes públicos, fechamento de escolas e universidades4. Além do uso obrigatório de máscaras,  dada a forma de contaminação via aerossóis e gotículas da COVID-19.
 
-Tem sido motivo de preocupações por parte dos Cientistas, governantes do mundo, organizações e instituições de Saúde e da população mundial. As consequências que se arrastam na sociedade são visíveis como: mortes, problemas emocionais, desemprego, crise econômica, Hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes. Indícios de um mundo que envelhece piorando.
-        
-Além de medidas de higienização das mãos, uso de máscaras, e outras. Os governos têm adotado o isolamento social como uma das medidas para conter o avanço da doença e por estarmos vivenciando esse cenário no nosso cotidiano, resolvemos aferir o impacto que as medidas de  isolamento tem na incidência da Covid-19, como tema de nosso projeto de pesquisa.
+Logo, entre as medidas de prevenção do contágio e disseminação da COVID-19 estão o isolamento, o distanciamento social e o lockdown, ambos diretamente relacionados à mobilidade urbana, que é o foco do nosso trabalho. A mobilidade urbana pode ser definida definida como “o deslocamento das pessoas e bens na cidade, com objetivo de desenvolver atividades econômicas e sociais no perímetro urbano das cidades, aglomerações e regiões metropolitanas”.  Ela tem sido submetida à análise e intervenção por parte das autoridades governamentais e sanitárias como um dos fatores que interferem na transmissão do SARS-CoV-2 em nível global e no surgimento de novas variantes do vírus, como aconteceu em Manaus. 
+
+Porém, observa-se que no Brasil não houve uma ação coordenada, uma vez que cada estado e cada município adotou as medidas em um tempo e de uma forma. Isso se deve a postura adotada pelo presidente em exercício, Jair Messias Bolsonaro, que muitas vezes se colocou contra as medidas de isolamento e distanciamento social e criando um dualismo entre a economia e a vida.
+    
+Evidencia-se pouca mudança de mobilidade entre a população mais pobres, o que denota que esta população encontra-se mais vulnerável e sob o risco de contaminação, além disso, a percepção das pessoas quanto ao isolamento social, varia conforme a renda, escolaridade, idade e sexo6, o que impacta em sua adesão.
+O município de Campinas é o terceiro maior de São Paulo e possui amplas atividades técnico científicas, constituindo em grande polo tecnológico educacional. Conforme o boletim epidemiológico nº 10, de abril de 2021, apresentou 81.941 de pessoas com COVID-19, taxa de incidência por cem mil habitantes de 6.715,7 com 3% de letalidade, conforme figura 1-Introdução.
+
+Com o crescimento da renda média dos brasileiros, aumento dos veículos nas ruas e preferência por transportes individuais, o ir e vir nas cidades está cada vez mais caótico. No Brasil, historicamente, a migração dos trilhos para o asfalto foi resultado de uma política de Estado que priorizou o investimento na indústria automobilística. Assim, o bonde deu lugar a ônibus, carros e motocicletas, misturando o transporte público e o privado, movido a gasolina e óleo diesel. Hoje, há alguns desafios da mobilidade urbana que destacam-se: limitação do fluxo; aumento do índice de acidentes, tendo como consequência mutilações graves ou mortes; pequena oferta de alternativa de mobilidade para atender o excesso de passageiros que dependem de transportes públicos e a poluição do ambiente.
+
+As consequências da COVID-19 vão além das vidas perdidas, acarretando problemas emocionais, desemprego, crise econômica, hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes, além de agudizar as desigualdades sociais dos países, sobretudo, aqueles em desenvolvimento, como é o caso do Brasil.   
+
+Com isso, objetivou-se com esse estudo avaliar o perfil dessa mobilidade urbana na cidade de Campinas/ São Paulo, durante a pandemia do SARS CoV-2.
+
 
 Vídeo de explicação: https://www.canva.com/design/DAEai0jTvls/LHTyoEe1CfSxXs6tmvJ7cg/view?utm_content=DAEai0jTvls&utm_campaign=designshare&utm_medium=link&utm_source=recording_view
 
 # Perguntas de Pesquisa
-O isolamento social reduz a incidência?
+Qual a característica da mobilidade urbana na cidade de Campinas/ São Paulo durante a pandemia?
 
 # Bases de Dados
 
@@ -150,8 +160,18 @@ Jupyter Notebook - Aplicação Web para um ambiente de programação interativo 
 
 Google Colab - Ambiente de programação hospedado na nuvem para processamento e compartilhamento.
 
-Power Bi- cruzamento de bases de dados para obtenção de informações (demográficas, projeções, ...).
+# Referências
+1 FREITAS, André Ricardo Ribas; NAPIMOGA, Marcelo; DONALISIO, Maria Rita. Análise da gravidade da Pandemia de COVID-19. Epidemiol. Serv. Saúde, Brasília, Abr. 2020. Disponível em: https://www.scielosp.org/article/ress/2020.v29n2/e2020119/. Acesso em 21 maio 2021.
 
+2 WORLD HEALTH ORGANIZATION. Coronavirus disease (COVID-19). Disponível em: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19#:~:text=symptoms. Acesso em  23 maio 2021.
+
+3 BRASIL, Painel Coronavírus. Disponível em: https://covid.saude.gov.br/. Acesso em 12 maio 2021 às 23:54.
+
+4 GALHARDI, Cláudia Pereira; FREIRE, Neyson Pinheiro; MINAYO, Maria Cecília de Souza; FAGUNDES, Maria Clara Marques. Fato ou Fake? Uma análise da desinformação frente à pandemia da COVID-19 no Brasil. Ciênc. saúde coletiva, Rio de Janeiro, v. 25, supl. 2, p. 4201-4210, Out. 2020. Disponível em : http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232020006804201&lng=en&nrm=iso. Acesso em 13 maio 2021.  
+
+5 Referência definição de mobilidade urbana
+
+6 BEZERRA, Anselmo César Vasconcelos et al . Fatores associados ao comportamento da população durante o isolamento social na pandemia de COVID-19. Ciênc. saúde coletiva,  Rio de Janeiro ,  v. 25, supl. 1, p. 2411-2421,  jun.  2020 .   Disponível em <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232020006702411&lng=pt&nrm=iso>. acessos em  23  maio  2021.  Epub 05-Jun-2020.  https://doi.org/10.1590/1413-81232020256.1.10792020.
 
 # Cronograma
 ![alt text](https://github.com/eitiyamamoto/MO826-projeto/blob/master/image/cronograma.png)
