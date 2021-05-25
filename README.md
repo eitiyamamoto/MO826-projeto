@@ -25,6 +25,12 @@ Porém, observa-se que no Brasil não houve uma ação coordenada, uma vez que c
 Evidencia-se pouca mudança de mobilidade entre a população mais pobres, o que denota que esta população encontra-se mais vulnerável e sob o risco de contaminação, além disso, a percepção das pessoas quanto ao isolamento social, varia conforme a renda, escolaridade, idade e sexo6, o que impacta em sua adesão.
 O município de Campinas é o terceiro maior de São Paulo e possui amplas atividades técnico científicas, constituindo em grande polo tecnológico educacional. Conforme o boletim epidemiológico nº 10, de abril de 2021, apresentou 81.941 de pessoas com COVID-19, taxa de incidência por cem mil habitantes de 6.715,7 com 3% de letalidade, conforme figura 1-Introdução.
 
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/epidemiologia-brasil-sp-campinas.png" alt="train_perf_fig" height="160" width="480"/>
+    <br>
+    <em>Figura 1-Introdução: Epidemiologia da COVID-19 no Brasil, no Estado de São Paulo e nos municípios de São Paulo e Campinas 2020-2021</em>
+</p>
+
 Com o crescimento da renda média dos brasileiros, aumento dos veículos nas ruas e preferência por transportes individuais, o ir e vir nas cidades está cada vez mais caótico. No Brasil, historicamente, a migração dos trilhos para o asfalto foi resultado de uma política de Estado que priorizou o investimento na indústria automobilística. Assim, o bonde deu lugar a ônibus, carros e motocicletas, misturando o transporte público e o privado, movido a gasolina e óleo diesel. Hoje, há alguns desafios da mobilidade urbana que destacam-se: limitação do fluxo; aumento do índice de acidentes, tendo como consequência mutilações graves ou mortes; pequena oferta de alternativa de mobilidade para atender o excesso de passageiros que dependem de transportes públicos e a poluição do ambiente.
 
 As consequências da COVID-19 vão além das vidas perdidas, acarretando problemas emocionais, desemprego, crise econômica, hospitais sobrecarregados além de suas capacidades, faltando produtos de saúde básicos para prestar assistência aos pacientes, além de agudizar as desigualdades sociais dos países, sobretudo, aqueles em desenvolvimento, como é o caso do Brasil.   
