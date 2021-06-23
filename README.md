@@ -206,8 +206,34 @@ Tabela 1: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SGD  | 0,994 | 974 |
 | NN  | 0,973  | 4.462 |
 
-A tabela 2 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos novos por dia na cidade de Campinas. Decidimos realizar a análise dos óbitos novos por apresentar um comportamento mais complexo que o apresentado pelos óbitos totais. O período utilizado para o conjunto de testes, treinamento e as features foram iguais ao da Tabela 1. Ao comparar os modelos, podemos observar que todos foram melhores que o modelo basal, mas o melhor resultado foi obtido pelas redes neurais (NN). Também é possível observar que os três modelos analisados (SVR, SGD e NN) tiveram scores piores em relação ao modelo de óbitos totais.
+A figura 13 mostra um gráfico de data e o valor de óbitos totais na cidade de campinas e o valor predito pelo modelo ARIMA que foi utilizado como basal. Em azul está o valor dos dados de conjunto de treinamento, em laranja está o conjunto de teste e em verde o valor predito pelo ARIMA. Podemos observar que o modelo conseguiu aprender a tendência de crescimento, mas não tem um resultado bom.
 
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/arima-obitos.png" alt="train_perf_fig" height="320" width="480"/>
+    <br>
+    <em>Figura 13: Conjunto de teste e validação com os valores predito pelo modelo ARIMA para óbitos totais</em>
+</p>
+
+A figura 14 mostra os dados reais e os dados preditos pelo modelo SGD para óbitos totais na cidade de campinas. Em azul está o valor real do conjunto de treinamento, em verde está o conjunto de teste, em laranja os valores preditos pelo modelo para o conjunto de treinamento e em vermelho o conjunto predito  pelo modelo para o conjunto de teste. Podemos observar que o modelo conseguiu prever o comportamento geral dos óbitos totais.
+
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/sgd-obitos.png" alt="train_perf_fig" height="320" width="480"/>
+    <br>
+    <em>Figura 14: Conjunto de teste e validação com os valores predito pelo modelo SGD para óbitos totais</em>
+</p>
+
+A tabela 2 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos novos por dia na cidade de Campinas. Decidimos realizar a análise dos óbitos novos por apresentar um comportamento mais complexo que o apresentado pelos óbitos totais. O período utilizado para o conjunto de testes e treinamento foram iguais ao da Tabela 1. As features utilizadas foram os 6 dias anteriores e os valores de seno e cosseno do dia em relação a semana e ao ano. O código python abaixo mostra como foi calculado. Ao comparar os modelos, podemos observar que todos foram melhores que o modelo basal, mas o melhor resultado foi obtido pelas redes neurais (NN). Também é possível observar que os três modelos analisados (SVR, SGD e NN) tiveram scores piores em relação ao modelo de óbitos totais.
+
+~~~python
+day = 24 * 60 * 60
+week = 7 * day
+year = 365.2425 * day
+timestamp = campinas_isolamento_lagged.index.map(pd.Timestamp.timestamp)
+campinas_isolamento_lagged['week_sin'] = np.sin(timestamp * (2 * np.pi / week))
+campinas_isolamento_lagged['week_cos'] = np.cos(timestamp * (2 * np.pi / week))
+campinas_isolamento_lagged['year_sin'] = np.sin(timestamp * (2 * np.pi / year))
+campinas_isolamento_lagged['year_cos'] = np.cos(timestamp * (2 * np.pi / year))
+~~~
 Tabela 2: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia
 
 |Modelo  | Score | MSE |
@@ -218,6 +244,22 @@ Tabela 2: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SGD  | 0,110 | 129,30 |
 | NN  | 0,398  | 97,42 |
 
+A figura 15 mostra o gráfico de óbitos novos para a cidade de Campinas para o conjunto real e o previsto pelo modelo. Em azul está o conjunto real, em laranja está os valores preditos pelo modelo para o conjunto de validação e em verde está os valores preditos pelo modelo para o conjunto de teste. Podemos observar que o modelo mostra um crescimento dos casos, mas não consegue mostrar o comportamento geral.
+
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/hw-obitos-novos.png" alt="train_perf_fig" height="320" width="480"/>
+    <br>
+    <em>Figura 15: Conjunto de teste e validação com os valores predito pelo modelo Holt Winter para óbitos novos</em>
+</p>
+
+A figura 16 mostra o gráfico de óbitos novos para a cidade de Campinas para o conjunto real e o previsto pelas redes neurais. Em azul está o conjunto de treinamento, em verde está o conjunto de teste, em laranja está os valores previstos pelo modelo para o conjunto de treinamento e em vermelho os valores previstos para o conjunto de teste. Podemos observar que o modelo conseguiu expressar o comportamento geral e os ciclos de alta e queda semanal. Também podemos observar que ainda há um erro entre o previsto e real para o conjunto de treinamento, mas consegue ter uma boa previsão para o conjunto de teste.
+
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/nn-obitos-novos.png" alt="train_perf_fig" height="320" width="480"/>
+    <br>
+    <em>Figura 16: Conjunto de teste e validação com os valores predito pela redes neurais para óbitos novos</em>
+</p>
+
 A tabela 3 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos novos por dia na cidade de Campinas. Neste caso, utilizamos o mesmo período para o conjunto de teste e treinamento, mas adicionamos as features de mobilidade para os 30 dias anteriores. Todos os modelos foram melhores que os modelos basais, mas os scores e os erros foram piores do que os modelos sem os dados de mobilidade. Observamos que especialmente nas redes neurais, o modelo chegava ao overffiting muito rapidamente, fazendo com que o conjunto de treinamento fosse aprendido rapidamente, mas tivesse um resultado muito baixo no conjunto de teste.
 
 Tabela 3: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia utilizando os dados de mobilidade
@@ -227,6 +269,15 @@ Tabela 3: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SVR  | -0,075  | 140,89 |
 | SGD  | 0,008 | 131,20 |
 | NN  | 0,060  | 123,90 |
+
+A figura 17 mostra o gráfico de óbitos novos para a cidade de Campinas para o conjunto real e o previsto pelas redes neurais com os dados de mobilidade. Em azul está o conjunto de treinamento, em verde está o conjunto de teste, em laranja está os valores previstos pelo modelo para o conjunto de treinamento e em vermelho os valores previstos para o conjunto de teste. Podemos observar que não é mais possíbel observar os dados reais para o conjunto de treinamento, pois o modelo está prevendo quase com exatidão os valores reais. Ao observar o conjunto de teste, podemos observar que o comportamento geral é bom visualmente, mas tem um erro maior do que o modelo representado na figura 16 e teve um score muito abaixo dos anteriores.
+
+<p align="center">
+ <img src="https://github.com/eitiyamamoto/MO826-projeto/blob/master/reports/figures/nn-obitos-novos-mobility.png" alt="train_perf_fig" height="320" width="480"/>
+    <br>
+    <em>Figura 17: Conjunto de teste e validação com os valores predito pelas redes neurais para óbitos novos utilizando dados de mobilidade</em>
+</p>
+
 
 # Discussão
 > Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
