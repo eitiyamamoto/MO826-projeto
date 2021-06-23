@@ -186,6 +186,16 @@ sns.distplot(df.Hemoglobin);
 plt.show();
 ~~~
 
+## Ferramentas
+> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
+
+# Resultados
+> Descrição dos resultados mais importantes obtidos.
+>
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
+
+A tabela 1 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos totais por dia na cidade de Campinas. Os dados utilizados para o teste e validação foram do dia 25 de fevereiro de 2020 até o dia 20 de abril de 2020. Os primeiros 294 dias foram utilizados como conjunto de treinamento e o restante 127 dias foram utilizados como conjunto de treinamento. As features utilizadas foram os dados de óbitos totais dos 6 dias anteriores. Este valor foi selecionado com base na autocorrelação dos dados de óbitos totais. O coeficiente de determinação e o erro quadrático médio foram calculados utilizando o conjunto de testes. Ao comparar os modelos, podemos observar que todos os modelos tiveram o erro quadrático médio melhor que os modelos basais, mas o melhor resultado foi obtido pelo SGD regressor.
+
 Tabela 1: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos totais por dia
 
 |Modelo  | Score | MSE |
@@ -195,6 +205,8 @@ Tabela 1: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SVR  | 0,989  | 1.806 |
 | SGD  | 0,994 | 974 |
 | NN  | 0,973  | 4.462 |
+
+A tabela 2 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos novos por dia na cidade de Campinas. Decidimos realizar a análise dos óbitos novos por apresentar um comportamento mais complexo que o apresentado pelos óbitos totais. O período utilizado para o conjunto de testes, treinamento e as features foram iguais ao da Tabela 1. Ao comparar os modelos, podemos observar que todos foram melhores que o modelo basal, mas o melhor resultado foi obtido pelas redes neurais (NN). Também é possível observar que os três modelos analisados (SVR, SGD e NN) tiveram scores piores em relação ao modelo de óbitos totais.
 
 Tabela 2: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia
 
@@ -206,6 +218,8 @@ Tabela 2: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SGD  | 0,110 | 129,30 |
 | NN  | 0,398  | 97,42 |
 
+A tabela 3 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos novos por dia na cidade de Campinas. Neste caso, utilizamos o mesmo período para o conjunto de teste e treinamento, mas adicionamos as features de mobilidade para os 30 dias anteriores. Todos os modelos foram melhores que os modelos basais, mas os scores e os erros foram piores do que os modelos sem os dados de mobilidade. Observamos que especialmente nas redes neurais, o modelo chegava ao overffiting muito rapidamente, fazendo com que o conjunto de treinamento fosse aprendido rapidamente, mas tivesse um resultado muito baixo no conjunto de teste.
+
 Tabela 3: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia utilizando os dados de mobilidade
 
 |Modelo  | Score | MSE |
@@ -213,14 +227,6 @@ Tabela 3: Tabela relacionando os modelos testado, o coeficiente de determinaçã
 | SVR  | -0,075  | 140,89 |
 | SGD  | 0,008 | 131,20 |
 | NN  | 0,060  | 123,90 |
-
-## Ferramentas
-> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
-
-# Resultados
-> Descrição dos resultados mais importantes obtidos.
->
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 
 # Discussão
 > Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
