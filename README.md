@@ -186,6 +186,34 @@ sns.distplot(df.Hemoglobin);
 plt.show();
 ~~~
 
+Tabela 1: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos totais por dia
+
+|Modelo  | Score | MSE |
+|--|--|--|
+| Holt Winter  |   | 212.943|
+| ARIMA  |   | 197.627 |
+| SVR  | 0,989  | 1.806 |
+| SGD  | 0,994 | 974 |
+| NN  | 0,973  | 4.462 |
+
+Tabela 2: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia
+
+|Modelo  | Score | MSE |
+|--|--|--|
+| Holt Winter  |   | 182,46 |
+| ARIMA  |   | 219,03 |
+| SVR  | 0,167  | 120,95 |
+| SGD  | 0,110 | 129,30 |
+| NN  | 0,398  | 97,42 |
+
+Tabela 3: Tabela relacionando os modelos testado, o coeficiente de determinação (score) e o erro quadrático médio (MSE) para óbitos por dia utilizando os dados de mobilidade
+
+|Modelo  | Score | MSE |
+|--|--|--|
+| SVR  | -0,075  | 140,89 |
+| SGD  | 0,008 | 131,20 |
+| NN  | 0,060  | 123,90 |
+
 ## Ferramentas
 > Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
 
