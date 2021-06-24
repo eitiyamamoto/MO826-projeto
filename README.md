@@ -171,31 +171,14 @@ Google Colab - Ambiente de programação hospedado na nuvem para processamento e
 # Análises Realizadas
 Com o objetivo de fazer uma previsão da quantidade de óbitos na cidade de Campinas utilizamos técnicas que trabalham com séries temporais.
 A primeira técnica foi Support Vector Regression (SVR) Segmentamos os dados obtidos para os últimos seis dias, a fim de prever o próximo dia. O resultado não conseguiu encontrar uma tendência, apesar de em algumomento elevar exponencialmente
+
 Para o segundo teste usamos uma técnica de otimização, o Stochastic Gradient Descent (SGD) que ajusta classificadores lineares e regressores.  Esta abordagem permitiu treinar o modelo e gerou uma previsão do comportamento geral satisfatória apresentando variâncias imputadas à sazonalidade.
+
 No terceiro teste utilizamos um regressor AdaBoost, um meta estimador que começa ajustando um regressor no conjunto de dados original e, em seguida, ajusta cópias adicionais do regressor no mesmo conjunto de dados, porém não conseguiu aprender as tendências de crescimento e nem predizer a partir dos dados.
+
 A quarta técnica aplicada foi Neural network, um modelo de relacionamentos não lineares complexos entre a variável de resposta e seus preditores. Como é um modelo interativo, para fazermos a previsão um passo a frente usamos uma entrada histórica que permite gerar uma predição, esta pode ser usa para prever quantos passos forem necessários à frente, desse modo gerou-se um treinamento adequado a partir da aprendizagem com o conjunto de testes.
+
 As limitações encontradas na predição da quantidade de obitos giram em torno da amostra, usamos um curto espaço de tempo para gerar os dados de predição.
-Conclusão
-
-A mobilidade urbana na cidade de Campinas-SP desde o início da pandemia em fevereiro/2020 tendeu a acompanhar a tendência e variabilidade da maioria dos outros municípios e estados do Brasil.  
-
-Essa mobilidade relacionada à circulação de pessoas,bens e  serviços mostrou-se mais restrita e intensa no começo da transmissão da pandemia onde algo novo e o medo de adquirir a doença de certa maneira se apossaram da população.E também de acordo com os decretos de restrição impostos pelas autoridades governamentais e orientações sanitárias.Alguns fatos que ocorreram,marcaram a mobilidade urbana, e permanecem até hoje,fazendo parte do nosso cotidiano:
-1- Houve diminuição nos deslocamentos,de maneira geral:
-2 - Menos veículos de transporte público estão circulando,como ônibus,trens,etc.
-3- Maior adesão aos serviços de delivery,já que as pessoas ficaram mais em suas residências;
-4 - Aumento do uso de bicicletas e veículos, para se evitar aglomeração nos transportes públicos.
-5 - E mesmo com as medidas de isolamento social,grande parte da população continuou usando os transportes públicos para poder continuar trabalhando,porém em condições precárias e complicadas pois os mesmos circularam mais cheios.
-         
-A percepção das pessoas quanto ao isolamento social,varia conforme à renda,escolaridade,idade e sexo.Sendo a população mais pobre menos adepta à restrições de circulação devido entre outras coisas a necessidade de obtenção e manutenção da renda familiar.   
-Em geral mulheres e idosos tiveram mais adesão às restrições quando comparado aos homens e jovens.A faixa etária de 30 à 49 anos  tomou menos medidas restritivas de contato físico,sendo o principal ponto influenciador para isso, o trabalho. 
-
-Pesquisas mostraram que ¼ da população aderiu pouco ou não aderiu às medidas de distanciamento social,o que tem reflexo no aumento da transmissibilidade do vírus,já que o distanciamento social é considerado umas das medidas mais bem sucedidas para evitar a propagação da Covid-19.
-
-Isso mostra que o controle da mobilidade urbana,redução das atividades não essenciais,restrição da circulação de pessoas em eventos e transportes públicos,são importantes na prevenção e diminuição da disseminação da Covid-19. 
- 
-
-
-
 
 # Resultados
 
@@ -295,10 +278,15 @@ Boa previsibilidade utilizando para os óbitos totais e para óbitos novos utili
 desde o início da pandemia em fevereiro/2020 tendeu a acompanhar a tendência e variabilidade da maioria dos outros municípios e estados do Brasil.  
 
 Essa mobilidade relacionada à circulação de pessoas,bens e  serviços mostrou-se mais restrita e intensa no começo da transmissão da pandemia onde algo novo e o medo de adquirir a doença de certa maneira se apossaram da população.E também de acordo com os decretos de restrição impostos pelas autoridades governamentais e orientações sanitárias.Alguns fatos que ocorreram,marcaram a mobilidade urbana, e permanecem até hoje,fazendo parte do nosso cotidiano:
-1- Houve diminuição nos deslocamentos,de maneira geral:
+
+1- Houve diminuição nos deslocamentos,de maneira geral
+
 2 - Menos veículos de transporte público estão circulando,como ônibus,trens,etc.
+
 3- Maior adesão aos serviços de delivery,já que as pessoas ficaram mais em suas residências;
+
 4 - Aumento do uso de bicicletas e veículos, para se evitar aglomeração nos transportes públicos.
+
 5 - E mesmo com as medidas de isolamento social,grande parte da população continuou usando os transportes públicos para poder continuar trabalhando,porém em condições precárias e complicadas pois os mesmos circularam mais cheios.
 
 A percepção das pessoas quanto ao isolamento social,varia conforme à renda,escolaridade,idade e sexo.Sendo a população mais pobre menos adepta à restrições de circulação devido entre outras coisas a necessidade de obtenção e manutenção da renda familiar.   
