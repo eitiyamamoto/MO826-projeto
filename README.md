@@ -40,7 +40,7 @@ Com isso, objetivou-se com esse estudo avaliar o perfil dessa mobilidade urbana 
 
 Vídeo de explicação: https://www.canva.com/design/DAEai0jTvls/LHTyoEe1CfSxXs6tmvJ7cg/view?utm_content=DAEai0jTvls&utm_campaign=designshare&utm_medium=link&utm_source=recording_view
 
-Vídeo de apresentação dos resultados: https://drive.google.com/file/d/1DpAR_7LL5AtjfokNetMGWAjc2FF7GNcm/view?usp=sharing
+Vídeo de apresentação dos resultados: https://drive.google.com/file/d/1HTHARM9IYXUtmSn6bqoQPhFybz3ZdM4m/view?usp=sharing
 
 # Perguntas de Pesquisa
 Qual a característica da mobilidade urbana na cidade de Campinas/ São Paulo durante a pandemia?
