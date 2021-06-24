@@ -40,7 +40,7 @@ Com isso, objetivou-se com esse estudo avaliar o perfil dessa mobilidade urbana 
 
 Vídeo de explicação: https://www.canva.com/design/DAEai0jTvls/LHTyoEe1CfSxXs6tmvJ7cg/view?utm_content=DAEai0jTvls&utm_campaign=designshare&utm_medium=link&utm_source=recording_view
 
-Vídeo de apresentação dos resultados: https://drive.google.com/file/d/1HTHARM9IYXUtmSn6bqoQPhFybz3ZdM4m/view?usp=sharing
+Vídeo de apresentação final: https://drive.google.com/file/d/1jkwoC0r6qd7LIhRM2zbAo3YamDzWiGby/view
 
 # Perguntas de Pesquisa
 Qual a característica da mobilidade urbana na cidade de Campinas/ São Paulo durante a pandemia?
@@ -169,24 +169,33 @@ Jupyter Notebook - Aplicação Web para um ambiente de programação interativo 
 Google Colab - Ambiente de programação hospedado na nuvem para processamento e compartilhamento.
 
 # Análises Realizadas
-> Descrição detalhada das análises realizadas.
->
->
->
->Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
->
->
->
-> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
->
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+Com o objetivo de fazer uma previsão da quantidade de óbitos na cidade de Campinas utilizamos técnicas que trabalham com séries temporais.
+A primeira técnica foi Support Vector Regression (SVR) Segmentamos os dados obtidos para os últimos seis dias, a fim de prever o próximo dia. O resultado não conseguiu encontrar uma tendência, apesar de em algumomento elevar exponencialmente
+Para o segundo teste usamos uma técnica de otimização, o Stochastic Gradient Descent (SGD) que ajusta classificadores lineares e regressores.  Esta abordagem permitiu treinar o modelo e gerou uma previsão do comportamento geral satisfatória apresentando variâncias imputadas à sazonalidade.
+No terceiro teste utilizamos um regressor AdaBoost, um meta estimador que começa ajustando um regressor no conjunto de dados original e, em seguida, ajusta cópias adicionais do regressor no mesmo conjunto de dados, porém não conseguiu aprender as tendências de crescimento e nem predizer a partir dos dados.
+A quarta técnica aplicada foi Neural network, um modelo de relacionamentos não lineares complexos entre a variável de resposta e seus preditores. Como é um modelo interativo, para fazermos a previsão um passo a frente usamos uma entrada histórica que permite gerar uma predição, esta pode ser usa para prever quantos passos forem necessários à frente, desse modo gerou-se um treinamento adequado a partir da aprendizagem com o conjunto de testes.
+As limitações encontradas na predição da quantidade de obitos giram em torno da amostra, usamos um curto espaço de tempo para gerar os dados de predição.
+Conclusão
 
-~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
-~~~
+A mobilidade urbana na cidade de Campinas-SP desde o início da pandemia em fevereiro/2020 tendeu a acompanhar a tendência e variabilidade da maioria dos outros municípios e estados do Brasil.  
+
+Essa mobilidade relacionada à circulação de pessoas,bens e  serviços mostrou-se mais restrita e intensa no começo da transmissão da pandemia onde algo novo e o medo de adquirir a doença de certa maneira se apossaram da população.E também de acordo com os decretos de restrição impostos pelas autoridades governamentais e orientações sanitárias.Alguns fatos que ocorreram,marcaram a mobilidade urbana, e permanecem até hoje,fazendo parte do nosso cotidiano:
+1- Houve diminuição nos deslocamentos,de maneira geral:
+2 - Menos veículos de transporte público estão circulando,como ônibus,trens,etc.
+3- Maior adesão aos serviços de delivery,já que as pessoas ficaram mais em suas residências;
+4 - Aumento do uso de bicicletas e veículos, para se evitar aglomeração nos transportes públicos.
+5 - E mesmo com as medidas de isolamento social,grande parte da população continuou usando os transportes públicos para poder continuar trabalhando,porém em condições precárias e complicadas pois os mesmos circularam mais cheios.
+         
+A percepção das pessoas quanto ao isolamento social,varia conforme à renda,escolaridade,idade e sexo.Sendo a população mais pobre menos adepta à restrições de circulação devido entre outras coisas a necessidade de obtenção e manutenção da renda familiar.   
+Em geral mulheres e idosos tiveram mais adesão às restrições quando comparado aos homens e jovens.A faixa etária de 30 à 49 anos  tomou menos medidas restritivas de contato físico,sendo o principal ponto influenciador para isso, o trabalho. 
+
+Pesquisas mostraram que ¼ da população aderiu pouco ou não aderiu às medidas de distanciamento social,o que tem reflexo no aumento da transmissibilidade do vírus,já que o distanciamento social é considerado umas das medidas mais bem sucedidas para evitar a propagação da Covid-19.
+
+Isso mostra que o controle da mobilidade urbana,redução das atividades não essenciais,restrição da circulação de pessoas em eventos e transportes públicos,são importantes na prevenção e diminuição da disseminação da Covid-19. 
+ 
+
+
+
 
 # Resultados
 
@@ -274,21 +283,34 @@ A figura 17 mostra o gráfico de óbitos novos para a cidade de Campinas para o 
     <em>Figura 17: Conjunto de teste e validação com os valores predito pelas redes neurais para óbitos novos utilizando dados de mobilidade</em>
 </p>
 
-
-# Discussão
-> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
->
-> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
-
 # Conclusão
-> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
->
-> Destacar os principais desafios enfrentados.
->
-> Principais lições aprendidas.
+ A característica da mobilidade urbana na cidade de Campinas-SP na pandemia da COVID-19 no período de 25 de fevereiro de 2020 a 20 de abril de 2021 encontrada na nossa pesquisa foi a seguinte:
+
+Crescimento das taxas de óbito, seguido de um decréscimo e posterior aumento; 
+A média de índice de isolamento teve aumento entre abril e maio e depois uma constante queda;
+A mobilidade para varejo, recreação, parque teve uma queda entre março e abril e depois houve constante crescimento;
+Boa previsibilidade utilizando para os óbitos totais e para óbitos novos utilizando os dados de óbito dos seis dias anteriores, porém ao adicionar os dados de mobilidade tivemos uma piora do modelo da previsibilidade. 
+
+
+desde o início da pandemia em fevereiro/2020 tendeu a acompanhar a tendência e variabilidade da maioria dos outros municípios e estados do Brasil.  
+
+Essa mobilidade relacionada à circulação de pessoas,bens e  serviços mostrou-se mais restrita e intensa no começo da transmissão da pandemia onde algo novo e o medo de adquirir a doença de certa maneira se apossaram da população.E também de acordo com os decretos de restrição impostos pelas autoridades governamentais e orientações sanitárias.Alguns fatos que ocorreram,marcaram a mobilidade urbana, e permanecem até hoje,fazendo parte do nosso cotidiano:
+1- Houve diminuição nos deslocamentos,de maneira geral:
+2 - Menos veículos de transporte público estão circulando,como ônibus,trens,etc.
+3- Maior adesão aos serviços de delivery,já que as pessoas ficaram mais em suas residências;
+4 - Aumento do uso de bicicletas e veículos, para se evitar aglomeração nos transportes públicos.
+5 - E mesmo com as medidas de isolamento social,grande parte da população continuou usando os transportes públicos para poder continuar trabalhando,porém em condições precárias e complicadas pois os mesmos circularam mais cheios.
+
+A percepção das pessoas quanto ao isolamento social,varia conforme à renda,escolaridade,idade e sexo.Sendo a população mais pobre menos adepta à restrições de circulação devido entre outras coisas a necessidade de obtenção e manutenção da renda familiar.   
+Em geral mulheres e idosos tiveram mais adesão às restrições quando comparado aos homens e jovens.A faixa etária de 30 à 49 anos  tomou menos medidas restritivas de contato físico,sendo o principal ponto influenciador para isso, o trabalho. 
+
+Pesquisas mostraram que ¼ da população aderiu pouco ou não aderiu às medidas de distanciamento social,o que tem reflexo no aumento da transmissibilidade do vírus,já que o distanciamento social é considerado umas das medidas mais bem sucedidas para evitar a propagação da Covid-19.
+
+Isso mostra que o controle da mobilidade urbana,redução das atividades não essenciais,restrição da circulação de pessoas em eventos e transportes públicos,são importantes na prevenção e diminuição da disseminação da Covid-19. 
+
 
 # Trabalhos Futuros
-> O que poderia ser melhorado se houvesse mais tempo?
+Como trabalhos futuros podemos sugerir o estudo de modelos utilizando uma quantidade de maior de cidades para criar um modelo mais robusto, estudo com uma quantidade maior de features para a previsão e efetuar a previsão de óbitos para um período maior de dias.
 
 # Referências
 1 FREITAS, André Ricardo Ribas; NAPIMOGA, Marcelo; DONALISIO, Maria Rita. Análise da gravidade da Pandemia de COVID-19. Epidemiol. Serv. Saúde, Brasília, Abr. 2020. Disponível em: https://www.scielosp.org/article/ress/2020.v29n2/e2020119/. Acesso em 21 maio 2021.
