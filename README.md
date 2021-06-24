@@ -186,13 +186,7 @@ sns.distplot(df.Hemoglobin);
 plt.show();
 ~~~
 
-## Ferramentas
-> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
-
 # Resultados
-> Descrição dos resultados mais importantes obtidos.
->
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 
 A tabela 1 mostra os resultados de coeficiente de determinação (score) e o erro quadrático médio (MSE) para cada modelo para os dados de óbitos totais por dia na cidade de Campinas. Os dados utilizados para o teste e validação foram do dia 25 de fevereiro de 2020 até o dia 20 de abril de 2020. Os primeiros 294 dias foram utilizados como conjunto de treinamento e o restante 127 dias foram utilizados como conjunto de treinamento. As features utilizadas foram os dados de óbitos totais dos 6 dias anteriores. Este valor foi selecionado com base na autocorrelação dos dados de óbitos totais. O coeficiente de determinação e o erro quadrático médio foram calculados utilizando o conjunto de testes. Ao comparar os modelos, podemos observar que todos os modelos tiveram o erro quadrático médio melhor que os modelos basais, mas o melhor resultado foi obtido pelo SGD regressor.
 
